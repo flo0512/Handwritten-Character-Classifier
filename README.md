@@ -1,4 +1,4 @@
-# Handwritten Letter Classifier (A–F)
+# Handwritten Letter Classifier
 
 This is my first custom neural network project using TensorFlow and Keras, trained on my own handwritten letters.
 
