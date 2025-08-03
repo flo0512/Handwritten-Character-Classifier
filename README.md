@@ -25,7 +25,7 @@ This is my first custom neural network project using TensorFlow and Keras, train
 - Flatten
 - Dense (64) – ReLU
 - Dropout (0.5)
-- Dense (6) – Sigmoid (one for each letter class)
+- Dense (8) – Sigmoid (one for each letter class)
 
 - Loss: sparse_categorical_crossentropy
 - Optimizer: adam
@@ -37,9 +37,9 @@ This is my first custom neural network project using TensorFlow and Keras, train
 
 - ### Accuracy:
 - Train: ~99 %
-- Test: ~90 %
+- Test: ~93 %
 
-- Confusion matrix shows stable results across all classes
+- Confusion matrix shows results across all classes
 
 ## Visualizations
 
@@ -50,7 +50,7 @@ This is my first custom neural network project using TensorFlow and Keras, train
 ## Dataset
 
 - Custom dataset: grayscale images (28×28)
-- 6 classes: A, B, C, D, E, F
+- 6 classes: A, B, C, D, E, F, G, H
 - Saved as directory-based structure, loaded with image_dataset_from_directory
 
 ## Next Steps
