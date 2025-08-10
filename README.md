@@ -4,7 +4,7 @@ This is my first custom neural network project using TensorFlow and Keras, train
 
 ## What I Did:
 
-- Collected and labeled 180 grayscale images (20 samples each of A–I)
+- Collected and labeled 620 grayscale images (20+ samples each of A–Z)
 - Built and trained a Convolutional Neural Network (CNN) to classify the letters
 - Evaluated the model using confusion matrix and accuracy plots
 
@@ -23,23 +23,27 @@ This is my first custom neural network project using TensorFlow and Keras, train
 - Conv2D (2×3) – 32 filters + ReLU
 - MaxPooling2D (2×2)
 - Flatten
-- Dense (32) – ReLU
-- Dropout (0.2)
 - Dense (64) – ReLU
 - Dropout (0.3)
-- Dense (9) – Sigmoid (one for each letter class)
+- Dense (128) – ReLU
+- Dropout (0.4)
+- Dense (128) – ReLU
+- Dropout (0.3)
+- Dense (256) – ReLU
+- Dropout (0.2)
+- Dense (26) – Sigmoid (one for each letter class)
 
 - Loss: sparse_categorical_crossentropy
 - Optimizer: adam
-- Epochs: 50
+- Epochs: 150
 
 ## Evaluation:
 
 - Train/Test Split: 80 % / 20 %
 
 - ### Accuracy:
-- Train: ~90 %
-- Test: ~91 %
+- Train: ~95 %
+- Test: ~87 %
 
 - Confusion matrix shows results across all classes
 
@@ -52,11 +56,10 @@ This is my first custom neural network project using TensorFlow and Keras, train
 ## Dataset
 
 - Custom dataset: grayscale images (28×28)
-- 9 classes: A, B, C, D, E, F, G, H, I
+- 26 classes: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
 - Saved as directory-based structure, loaded with image_dataset_from_directory
 
 ## Next Steps
 
 - Improve model generalization with more diverse samples
-- Expand to more characters (full alphabet or digits)
 - Build a GUI for real-time handwriting input and classification
