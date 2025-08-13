@@ -16,7 +16,7 @@ model = tf.keras.models.load_model(
 
 root = tk.Tk()
 root.configure(bg="grey", width=400, height=400)
-root.title("Handschrift-Buchstaben-Erkennung")
+root.title("Handwritten Character Classifier")
 
 canvas_width = 300
 canvas_height = 300
@@ -73,7 +73,7 @@ def predict():
     predicted_class = np.argmax(pred)
     predicted_char = LABELS[predicted_class]
     prediction_label.config(
-        text=f"Vorhersage: {predicted_char} (Klasse: {predicted_class})")
+        text=f"Prediction: {predicted_char}")
 
 
 canvas.bind("<Button-1>", start_draw)
@@ -84,9 +84,9 @@ canvas.bind("<ButtonRelease-1>", stop_draw)
 btn_frame = tk.Frame(root)
 btn_frame.pack()
 
-tk.Button(btn_frame, text="Erkennen", command=predict).pack(
+tk.Button(btn_frame, text="predict", command=predict).pack(
     side=tk.LEFT, padx=5)
-tk.Button(btn_frame, text="Löschen", command=clear_canvas).pack(
+tk.Button(btn_frame, text="delete", command=clear_canvas).pack(
     side=tk.LEFT, padx=5)
 
 
