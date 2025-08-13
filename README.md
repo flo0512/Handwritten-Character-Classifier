@@ -27,24 +27,20 @@ This is my first custom neural network project using TensorFlow and Keras, train
 - Flatten
 - Dense (64) – ReLU
 - Dropout (0.3)
-- Dense (128) – ReLU
-- Dropout (0.4)
-- Dense (128) – ReLU
+- Dense (64) – ReLU
 - Dropout (0.3)
-- Dense (256) – ReLU
-- Dropout (0.2)
-- Dense (26) – Sigmoid (one for each letter class)
+- Dense (26) – Softmax (one for each letter class)
 
 - Loss: sparse_categorical_crossentropy
 - Optimizer: adam
-- Epochs: 150
+- Epochs: 100
 
 ## Evaluation:
 
 - Train/Test Split: 80 % / 20 %
 
 - ### Accuracy:
-- Train: ~95 %
+- Train: ~96 %
 - Test: ~87 %
 
 - Confusion matrix shows results across all classes
