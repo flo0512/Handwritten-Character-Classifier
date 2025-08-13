@@ -7,12 +7,14 @@ This is my first custom neural network project using TensorFlow and Keras, train
 - Collected and labeled 620 grayscale images (20+ samples each of A–Z)
 - Built and trained a Convolutional Neural Network (CNN) to classify the letters
 - Evaluated the model using confusion matrix and accuracy plots
+- Built a GUI with tkinter (used Copilot fpr difficult things)
 
 ## What I Learned:
 
 - How to prepare and label a small custom dataset
 - Basics of CNNs and their architecture
 - How to split and normalize image data manually
+- Basics of tkinter
 
 ## Model Architecture
 
@@ -62,4 +64,3 @@ This is my first custom neural network project using TensorFlow and Keras, train
 ## Next Steps
 
 - Improve model generalization with more diverse samples
-- Build a GUI for real-time handwriting input and classification
