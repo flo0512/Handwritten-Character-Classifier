@@ -4,7 +4,7 @@ This is my first custom neural network project using TensorFlow and Keras, train
 
 ## What I Did:
 
-- Collected and labeled 680 grayscale images (20+ samples each of A–Z)
+- Collected and labeled 760 grayscale images (20+ samples each of A–Z)
 - Built and trained a Convolutional Neural Network (CNN) to classify the letters
 - Evaluated the model using confusion matrix and accuracy plots
 - Built a GUI with tkinter (used Copilot for difficult things)
@@ -38,10 +38,11 @@ This is my first custom neural network project using TensorFlow and Keras, train
 ## Evaluation:
 
 - Train/Test Split: 80 % / 20 %
+- Test: 50% Validation/ 50% Test
 
 - ### Accuracy:
 - Train: ~96 %
-- Test: ~83 %
+- Test: ~88 %
 
 - Confusion matrix shows results across all classes
 
